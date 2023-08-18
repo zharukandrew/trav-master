@@ -46,7 +46,7 @@ li{
     }
     &__item a{
         text-decoration: none;
-        color: black;
+        color: orange;
     }
     &__button {
         background-color: orange;
@@ -84,6 +84,8 @@ li{
             font-size: 3rem;
             animation-duration: 3s;
             animation-name: slide;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
         }
         @keyframes slide {
             from {
@@ -102,6 +104,7 @@ li{
             color: #666666;
             animation-duration: 3s;
             animation-name: slidein;
+            line-height: 40px;
         }
         
        
@@ -119,24 +122,28 @@ li{
 
         &__buttom{
             margin-top: 3.81rem;
-            width:17%;
-            height: 6.9%;
+            width:182px;
+            height: 40px;
             border: 1px solid #FA7436;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             padding-top: 9.52px;
+            background-color: transparent;
         }
         &__block2{
            flex:0 0 50%
         }
       }
       .location{
-       width: 860px;
+       width: 670px;
+       height: 124px;
        display: flex;
        justify-content: center;
         &__block{
             gap: 2rem;
+            padding-top: 2rem;
+            margin-left: 3rem;
           width: 100%;
           display: flex;
           background: #FFFFFF;
@@ -158,7 +165,8 @@ li{
             transition: .4s;  
         }
         &__button{
-            width:15%;
+            width:168px;
+            height: 60px;
            color:white;
             background: #FA7436;
             box-shadow: 0px 8px 16px rgba(250, 116, 54, 0.16);
@@ -188,7 +196,7 @@ li{
             font-weight: 700;
             font-size: 48px;
             transition: .4s; 
-            
+            color: var(--primary-b, #222);
         }
         &__title:hover {
             transform: scale(1.1);
@@ -200,10 +208,11 @@ li{
             height: 68.96px;
             text-align: center;
             padding-top: 1.5rem;          
-            color: #666666;
+            color: var(--paragraph, #666);
             animation-duration: 3s;
             animation-name:page;
             transition: .4s; 
+            line-height: 32px;
         }
         
         &__page:hover {
@@ -273,6 +282,15 @@ li{
             padding-top:2.5rem;
           
         }
+        &__list-item-page{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            color: #666666;
+            padding-top:2.5rem;
+            width: 290px;
+        }
          }
          .exclisive__blocks-list p{
             font-style: normal;
@@ -304,10 +322,11 @@ li{
             &__lists-page{
                 font-size:16px;
                 color: #666666;
-                max-width: 25%;
+                max-width: 26%;
                 display: inline-block;
                 margin-top: 1.5rem;
                 transition: .4s; 
+                line-height: 32px;
             }
             &__lists-page:hover {
                 transform: scale(1.1);
@@ -364,6 +383,8 @@ li{
                 font-size: 16px;
                 line-height: 24px;
                 color: #666666;
+                
+                
             }
             &__block-paris{
                 padding-left: 1.5rem;
@@ -830,7 +851,7 @@ li{
             margin-left: 40px;
             gap:100px;
         }
-        &__block2{
+        &__block2 img{
             display: none;
         }
          &__title{
