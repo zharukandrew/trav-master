@@ -750,6 +750,41 @@ li{
                 margin-top: 3.5px;
 
             }
+            &__border {
+                position: relative;
+                right: 50px;
+                bottom:150px;
+                &-item-1{
+                    position: absolute;
+                    right: 450px;
+                    top:90px;
+                    right:235px;
+                    width: 389.448px;
+                }
+                &-item-2{
+                    position: absolute;
+                    top:50px;
+                    right: 235px;
+                    width: 354px;
+                }
+                &-item-3{
+                    position: absolute;
+                    top:50px;
+                    right: 235px;
+                    width: 308px;
+                }
+                &-item-4{
+                    position: absolute;
+                    top:30px;
+                    right: 235px;
+                    width:282px;
+                }
+                &-item-5{
+                    position: absolute;
+                    right: 235px;
+                    width:252px;
+                }
+            }
         }
         .triabocks{
             &__list:hover{

@@ -713,6 +713,41 @@ li {
 .subscribe__lists-button {
   margin-top: 3.5px;
 }
+.subscribe__border {
+  position: relative;
+  right: 50px;
+  bottom: 150px;
+}
+.subscribe__border-item-1 {
+  position: absolute;
+  right: 450px;
+  top: 90px;
+  right: 235px;
+  width: 389.448px;
+}
+.subscribe__border-item-2 {
+  position: absolute;
+  top: 50px;
+  right: 235px;
+  width: 354px;
+}
+.subscribe__border-item-3 {
+  position: absolute;
+  top: 50px;
+  right: 235px;
+  width: 308px;
+}
+.subscribe__border-item-4 {
+  position: absolute;
+  top: 30px;
+  right: 235px;
+  width: 282px;
+}
+.subscribe__border-item-5 {
+  position: absolute;
+  right: 235px;
+  width: 252px;
+}
 
 .triabocks {
   width: 70%;
