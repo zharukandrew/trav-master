@@ -972,6 +972,9 @@ li {
   .subscribe__lists-button button {
     font-size: 18px;
   }
+  .subscribe__border {
+    display: none;
+  }
   .triabocks {
     width: 70%;
     margin: 18rem;
