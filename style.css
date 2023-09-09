@@ -186,6 +186,12 @@ li {
   margin-top: 7rem;
   margin-bottom: 9.6rem;
 }
+.thing__box {
+  position: relative;
+  left: 400px;
+  top: 150px;
+  width: 150px;
+}
 .thing__title {
   max-width: 35%;
   height: 58.18px;
@@ -443,6 +449,12 @@ li {
   margin-bottom: 9.5rem;
 }
 
+.plan__ilent {
+  position: relative;
+  left: 70rem;
+  bottom: 325px;
+}
+
 .strana {
   width: 100%;
 }
@@ -653,7 +665,8 @@ li {
 
 .subscribe {
   margin: 10rem;
-  width: 100%;
+  width: 70%;
+  height: 75%;
   border-radius: 16px;
   background: var(--primary-o, #FA7436);
   display: flex;
@@ -715,38 +728,14 @@ li {
 }
 .subscribe__border {
   position: relative;
-  right: 50px;
-  bottom: 150px;
+  right: 150px;
+  bottom: 450px;
 }
 .subscribe__border-item-1 {
   position: absolute;
-  right: 450px;
-  top: 90px;
-  right: 235px;
+  right: 0px;
+  top: 0px;
   width: 389.448px;
-}
-.subscribe__border-item-2 {
-  position: absolute;
-  top: 50px;
-  right: 235px;
-  width: 354px;
-}
-.subscribe__border-item-3 {
-  position: absolute;
-  top: 50px;
-  right: 235px;
-  width: 308px;
-}
-.subscribe__border-item-4 {
-  position: absolute;
-  top: 30px;
-  right: 235px;
-  width: 282px;
-}
-.subscribe__border-item-5 {
-  position: absolute;
-  right: 235px;
-  width: 252px;
 }
 
 .triabocks {

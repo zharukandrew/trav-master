@@ -190,6 +190,12 @@ li{
         align-items: center;
         margin-top: 7rem;
        margin-bottom: 9.6rem;
+       &__box{
+        position: relative;
+        left:400px;
+        top:150px;
+        width: 150px;
+       }
         &__title{
             max-width: 35%;
             height: 58.18px;
@@ -467,7 +473,11 @@ li{
             width:100%;
            margin-top:7.8rem;
          }
-        
+        .plan__ilent{
+            position: relative;
+            left:70rem;
+            bottom:325px;
+        }
          .strana
         {
             &__lists{
@@ -682,7 +692,8 @@ li{
         }
         .subscribe{
             margin:10rem ;
-            width:100%;
+            width:70%;
+            height: 75%;
             border-radius: 16px;
             background:var(--primary-o, #FA7436);
             display: flex;
@@ -752,38 +763,16 @@ li{
             }
             &__border {
                 position: relative;
-                right: 50px;
-                bottom:150px;
+                right: 150px;
+                bottom:450px;
                 &-item-1{
                     position: absolute;
-                    right: 450px;
-                    top:90px;
-                    right:235px;
+                    right: 0px;
+                    top:0px;
+                  
                     width: 389.448px;
                 }
-                &-item-2{
-                    position: absolute;
-                    top:50px;
-                    right: 235px;
-                    width: 354px;
-                }
-                &-item-3{
-                    position: absolute;
-                    top:50px;
-                    right: 235px;
-                    width: 308px;
-                }
-                &-item-4{
-                    position: absolute;
-                    top:30px;
-                    right: 235px;
-                    width:282px;
-                }
-                &-item-5{
-                    position: absolute;
-                    right: 235px;
-                    width:252px;
-                }
+               
             }
         }
         .triabocks{
