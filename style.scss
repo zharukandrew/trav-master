@@ -699,6 +699,10 @@ li{
             display: flex;
             flex-direction: column;
             align-items: center;
+            position:relative;
+            right: 0px;
+            left:0px;
+
             &__list{
                 display: flex;
                justify-content: center;
@@ -762,17 +766,23 @@ li{
 
             }
             &__border {
-                position: relative;
-                right: 150px;
-                bottom:450px;
+                
                 &-item-1{
                     position: absolute;
-                    right: 0px;
-                    top:0px;
+                    left: 0px;
+                    bottom:0px;
                   
                     width: 389.448px;
                 }
                
+            }
+            &__palma{
+                &-item-1{
+                    position: absolute;
+                    right: 0px;
+                    top:0px;
+                    max-width: 112px;
+                }
             }
         }
         .triabocks{

@@ -672,6 +672,9 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  right: 0px;
+  left: 0px;
 }
 .subscribe__list {
   display: flex;
@@ -726,16 +729,17 @@ li {
 .subscribe__lists-button {
   margin-top: 3.5px;
 }
-.subscribe__border {
-  position: relative;
-  right: 150px;
-  bottom: 450px;
-}
 .subscribe__border-item-1 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 389.448px;
+}
+.subscribe__palma-item-1 {
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 389.448px;
+  max-width: 112px;
 }
 
 .triabocks {
