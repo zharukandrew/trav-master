@@ -1,4 +1,4 @@
-@media(max-width:767px){
+/*@media(max-width:767px){
     
     @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap');
     .header{
@@ -50,7 +50,15 @@
             width:45%;
             height:70px;
         }
+       
     }
+    
+    .location__item-title {
+        display: none !important;
+      }
+      
+   /* 
+       //не трогаь 
     .thing{
         &__title{
             font-size: 15px;
@@ -211,4 +219,63 @@
             color:#999;
         }
     }
-}
+    }*/
+    @media (max-width: 767px) {
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap');
+        .header {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            &__list {
+                display: none;
+            }
+            &__item a {
+                display: none;
+            }
+        }
+        .journey {
+            &__block {
+                display: flex;
+                margin-left: 40px;
+                gap: 100px;
+            }
+            &__block2 img {
+                display: none;
+            }
+            &__title {
+                max-width: 70px;
+                font-size: 1.5rem;
+            }
+            &__buttom {
+                display: none;
+            }
+        }
+        .location {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            margin-left: 15px;
+            margin-top: 40px;
+            &__block {
+                gap: 2rem;
+                max-width: 60%;
+                display: flex;
+                background: #FFFFFF;
+                box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+                border-radius: 10px;
+                justify-content: center;
+                margin-left: 100px;
+            }
+            &__button {
+                width: 25%;
+                height: 50px;
+                margin-left: 20px;
+            }
+        }
+        .location__item-title {
+           display: none;
+        }
+        .location__item-page {
+            display: none;
+         }
+    }
