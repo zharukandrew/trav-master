@@ -324,6 +324,7 @@ li {
 }
 .exclusive__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.8rem;
   margin-left: 107px;
   margin-top: 4rem;
@@ -457,6 +458,7 @@ li {
 
 .strana {
   width: 100%;
+  display: none;
 }
 .strana__lists {
   margin-left: 12.5rem;
@@ -524,6 +526,7 @@ li {
   margin-top: 10rem;
   margin-bottom: 10rem;
   background-color: #cdf1ff;
+  display: none;
 }
 .servic__list-title {
   color: #222;
@@ -617,6 +620,7 @@ li {
 
 .blog {
   max-width: 100%;
+  display: none;
 }
 .blog__title {
   display: flex;
@@ -675,6 +679,7 @@ li {
   position: relative;
   right: 0px;
   left: 0px;
+  display: none;
 }
 .subscribe__list {
   display: flex;
@@ -747,6 +752,7 @@ li {
   margin: 18rem;
   gap: 30px;
   display: flex;
+  display: none;
 }
 .triabocks__list:hover {
   transform: scale(1.1);
@@ -799,6 +805,7 @@ li {
   padding-bottom: 50px;
   border-top: 1px solid #999;
   transition: 0.4s;
+  display: none;
 }
 .footer-item {
   padding-top: 30px;
