@@ -46,7 +46,7 @@ li{
     }
     &__item a{
         text-decoration: none;
-        color: black;
+        color: orange;
     }
     &__button {
         background-color: orange;
@@ -84,6 +84,8 @@ li{
             font-size: 3rem;
             animation-duration: 3s;
             animation-name: slide;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            
         }
         @keyframes slide {
             from {
@@ -102,6 +104,7 @@ li{
             color: #666666;
             animation-duration: 3s;
             animation-name: slidein;
+            line-height: 40px;
         }
         
        
@@ -119,31 +122,36 @@ li{
 
         &__buttom{
             margin-top: 3.81rem;
-            width:17%;
-            height: 6.9%;
+            width:182px;
+            height: 40px;
             border: 1px solid #FA7436;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             padding-top: 9.52px;
+            background-color: transparent;
         }
         &__block2{
            flex:0 0 50%
         }
       }
       .location{
-       width: 860px;
+       max-width: 670px;
+       height: 124px;
        display: flex;
        justify-content: center;
         &__block{
             gap: 2rem;
-          width: 100%;
+            padding-top: 2rem;
+            margin-left: 3rem;
+          max-width: 100%;
           display: flex;
           background: #FFFFFF;
          box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
          border-radius: 10px;
         justify-content: center;
         }
+      
         &__item{
             margin-top: 0.25rem;
             margin-bottom: 0.25rem;
@@ -158,13 +166,15 @@ li{
             transition: .4s;  
         }
         &__button{
-            width:15%;
+            width:168px;
+            height: 60px;
            color:white;
             background: #FA7436;
             box-shadow: 0px 8px 16px rgba(250, 116, 54, 0.16);
             border-radius: 5px;
             border:none;
         }
+    
         &__item-page{
             color: #666666;
             font-style: normal;
@@ -182,13 +192,19 @@ li{
         align-items: center;
         margin-top: 7rem;
        margin-bottom: 9.6rem;
+       &__box{
+        position: relative;
+        left:400px;
+        top:150px;
+        width: 150px;
+       }
         &__title{
             max-width: 35%;
             height: 58.18px;
             font-weight: 700;
             font-size: 48px;
             transition: .4s; 
-            
+            color: var(--primary-b, #222);
         }
         &__title:hover {
             transform: scale(1.1);
@@ -200,10 +216,11 @@ li{
             height: 68.96px;
             text-align: center;
             padding-top: 1.5rem;          
-            color: #666666;
+            color: var(--paragraph, #666);
             animation-duration: 3s;
             animation-name:page;
             transition: .4s; 
+            line-height: 32px;
         }
         
         &__page:hover {
@@ -273,6 +290,15 @@ li{
             padding-top:2.5rem;
           
         }
+        &__list-item-page{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            color: #666666;
+            padding-top:2.5rem;
+            width: 290px;
+        }
          }
          .exclisive__blocks-list p{
             font-style: normal;
@@ -304,10 +330,11 @@ li{
             &__lists-page{
                 font-size:16px;
                 color: #666666;
-                max-width: 25%;
+                max-width: 26%;
                 display: inline-block;
                 margin-top: 1.5rem;
                 transition: .4s; 
+                line-height: 32px;
             }
             &__lists-page:hover {
                 transform: scale(1.1);
@@ -316,6 +343,7 @@ li{
             }
             &__list{
                 display: flex;
+                flex-wrap:wrap;
                 gap:1.8rem;
                 margin-left: 107px;
                 margin-top: 4rem;
@@ -364,6 +392,8 @@ li{
                 font-size: 16px;
                 line-height: 24px;
                 color: #666666;
+                
+                
             }
             &__block-paris{
                 padding-left: 1.5rem;
@@ -446,7 +476,11 @@ li{
             width:100%;
            margin-top:7.8rem;
          }
-        
+        .plan__ilent{
+            position: relative;
+            left:70rem;
+            bottom:325px;
+        }
          .strana
         {
             &__lists{
@@ -503,7 +537,8 @@ li{
                 line-height: 24px;
                 color: #666666;
             }
-             width:100%
+             width:100%;
+             
          }
          .servic{
             &__list-title{
@@ -599,6 +634,7 @@ li{
            margin-top: 10rem;
            margin-bottom: 10rem;
            background-color: #cdf1ff;
+           
         }
         .servic__list-two{
             border-radius:5px;
@@ -658,15 +694,21 @@ li{
                 padding-top: 1rem;
             }
             max-width: 100%;
+           
         }
         .subscribe{
             margin:10rem ;
-            width:100%;
+            width:70%;
+            height: 75%;
             border-radius: 16px;
             background:var(--primary-o, #FA7436);
             display: flex;
             flex-direction: column;
             align-items: center;
+            position:relative;
+            right: 0px;
+            left:0px;
+
             &__list{
                 display: flex;
                justify-content: center;
@@ -729,6 +771,26 @@ li{
                 margin-top: 3.5px;
 
             }
+            &__border {
+                
+                &-item-1{
+                    position: absolute;
+                    left: 0px;
+                    bottom:0px;
+                  
+                    width: 389.448px;
+                }
+               
+            }
+            &__palma{
+                &-item-1{
+                    position: absolute;
+                    right: 0px;
+                    top:0px;
+                    max-width: 112px;
+                }
+            }
+            
         }
         .triabocks{
             &__list:hover{
@@ -773,10 +835,12 @@ li{
             margin:18rem;
             gap:30px;
             display: flex;
+            
         }
 .red {
     background-color:green;
     transition: 1s;
+    
 }
 .footer{
     display: flex;
@@ -793,6 +857,7 @@ li{
         text-decoration: none;
         color:#999;
     }
+    
 }
 .footer:hover{
     transform: scale(1.1);
@@ -809,214 +874,3 @@ li{
 
 //mobile
 
-@media(max-width:767px){
-    
-    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap');
-    .header{
-        max-width: 100%;
-         display: flex;
-       
-        align-items: center;
-        &__list{
-            display: none;
-        }
-        &__item a{
-            display: none;
-        }
-    }
-    .journey{
-        &__block{
-            display: flex;
-            margin-left: 40px;
-            gap:100px;
-        }
-        &__block2{
-            display: none;
-        }
-         &__title{
-            max-width: 70px;
-            font-size: 1.5rem;
-        }
-        &__buttom{
-           display: none;
-        }
-    }
-    .location{
-        width:350px;
-        display: flex;
-        justify-content: center;
-        margin-left: 15px;
-        margin-top: 40px;
-        &__block{
-            gap: 2rem;
-          width: 100%;
-          display: flex;
-          background: #FFFFFF;
-         box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
-         border-radius: 10px;
-        justify-content: center;
-        margin-left: 100px;
-        }
-        &__button{
-            width:45%;
-            height:70px;
-        }
-    }
-    .thing{
-        &__title{
-            font-size: 15px;
-            max-width: 40%;
-        }
-        &__page{
-            font-size: 13px;
-            max-width: 60%;
-           padding-top: 5px;
-        }
-        &__list-item{
-            max-width: 120px;
-           
-        }
-        &__list-item h1{
-            font-size: 12px;
-        }
-        &__list-item p{
-            font-size: 12px;
-            max-width:100px;
-        }
-    }
-    .exclusive{
-        &__lists-title{
-            font-size: 18px
-        }
-       &__list{
-            display: flex;
-           flex-direction: column; 
-       }
-    }
-    .plan{
-        &__lists-title{
-            font-size: 18px;
-            line-height: 32px;
-        }
-        &__lists-page{
-            font-size: 9px;
-            line-height: 32px;
-        }
-    }
-    .strana{
-        &__lists{
-            display: flex;
-            flex-direction: column;
-        }
-        &__items{
-            width: 350px;
-        }
-    }
-    .servic{
-       
-        &__list-title{
-            font-size: 9px;
-        }
-        &__list-page{
-            font-size: 9px;
-        }
-        &__list-pages{
-            font-size: 9px;
-            max-width: 50%;
-        }
-        &__list-titles{
-            font-size: 9px;
-        }
-        &__list-titlesis{
-            font-size: 9px;
-        }
-       
-    }
-    .servic{
-        display: flex;
-        gap:20px;
-        flex-wrap: wrap;
-    }
-    .servic__list-two{
-        border-radius:10px;
-        background: var(--white, #FFF);
-        box-shadow: 0px 1.8518518209457397px 3.1481480598449707px 0px rgba(0, 0, 0, 0.00), 0px 8.148148536682129px 6.518518447875977px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852035522461px 25.481481552124023px 0px rgba(0, 0, 0, 0.01), 0px 64.81481170654297px 46.85185241699219px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
-        width: 100%;
-        height: 300px;
-       
-     
-    }
-    .blog{
-        &__title{
-            margin-left: 10rem;
-        }
-        &__titles{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
-    }
-    
-
-    .blog__title h3{
-        font-size: 10px;
-       
-    }
-    .subscribe{
-        &__list h1{
-            font-size: 18px;
-        }
-        &__lists-box input{
-            font-size: 18px;
-           padding-right:20px;
-        }
-        &__lists-box p{
-            font-size: 18px;
-        }
-        &__lists-button button{
-            font-size: 18px;
-        }
-    }
-    .triabocks{
-       
-        &__list-page{
-            
-            color:#666666;
-            padding-top: 1rem;
-        }
-        &__list-company{
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-             color:#000
-        }
-        &__list-companies{
-            font-size:10px;
-            font-style: normal;                
-            font-weight: 400;   
-            color:#666666;     
-            padding-top: 1rem;        
-        }
-        width: 70%;
-        margin: 18rem;
-        gap: 30px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .footer{
-        display: flex;
-        gap:15rem;
-        margin-top: 20px;
-        padding-left: 50px;
-        padding-bottom:50px;
-        border-top:1px solid #999;
-        &-item {
-           padding-top: 30px;
-        }
-        &-item a{
-            text-decoration: none;
-            color:#999;
-        }
-    }
-}

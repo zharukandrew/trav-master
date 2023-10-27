@@ -48,7 +48,7 @@ li {
 }
 .header__item a {
   text-decoration: none;
-  color: black;
+  color: orange;
 }
 .header__button {
   background-color: orange;
@@ -86,6 +86,7 @@ li {
   font-size: 3rem;
   animation-duration: 3s;
   animation-name: slide;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @keyframes slide {
   from {
@@ -103,6 +104,7 @@ li {
   color: #666666;
   animation-duration: 3s;
   animation-name: slidein;
+  line-height: 40px;
 }
 @keyframes slidein {
   from {
@@ -116,26 +118,30 @@ li {
 }
 .journey__buttom {
   margin-top: 3.81rem;
-  width: 17%;
-  height: 6.9%;
+  width: 182px;
+  height: 40px;
   border: 1px solid #FA7436;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   padding-top: 9.52px;
+  background-color: transparent;
 }
 .journey__block2 {
   flex: 0 0 50%;
 }
 
 .location {
-  width: 860px;
+  max-width: 670px;
+  height: 124px;
   display: flex;
   justify-content: center;
 }
 .location__block {
   gap: 2rem;
-  width: 100%;
+  padding-top: 2rem;
+  margin-left: 3rem;
+  max-width: 100%;
   display: flex;
   background: #FFFFFF;
   box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
@@ -155,7 +161,8 @@ li {
   transition: 0.4s;
 }
 .location__button {
-  width: 15%;
+  width: 168px;
+  height: 60px;
   color: white;
   background: #FA7436;
   box-shadow: 0px 8px 16px rgba(250, 116, 54, 0.16);
@@ -179,12 +186,19 @@ li {
   margin-top: 7rem;
   margin-bottom: 9.6rem;
 }
+.thing__box {
+  position: relative;
+  left: 400px;
+  top: 150px;
+  width: 150px;
+}
 .thing__title {
   max-width: 35%;
   height: 58.18px;
   font-weight: 700;
   font-size: 48px;
   transition: 0.4s;
+  color: var(--primary-b, #222);
 }
 .thing__title:hover {
   transform: scale(1.1);
@@ -196,10 +210,11 @@ li {
   height: 68.96px;
   text-align: center;
   padding-top: 1.5rem;
-  color: #666666;
+  color: var(--paragraph, #666);
   animation-duration: 3s;
   animation-name: page;
   transition: 0.4s;
+  line-height: 32px;
 }
 .thing__page:hover {
   color: red;
@@ -257,6 +272,15 @@ li {
   color: #666666;
   padding-top: 2.5rem;
 }
+.thing__list-item-page {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #666666;
+  padding-top: 2.5rem;
+  width: 290px;
+}
 
 .exclisive__blocks-list p {
   font-style: normal;
@@ -287,10 +311,11 @@ li {
 .exclusive__lists-page {
   font-size: 16px;
   color: #666666;
-  max-width: 25%;
+  max-width: 26%;
   display: inline-block;
   margin-top: 1.5rem;
   transition: 0.4s;
+  line-height: 32px;
 }
 .exclusive__lists-page:hover {
   transform: scale(1.1);
@@ -299,6 +324,7 @@ li {
 }
 .exclusive__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.8rem;
   margin-left: 107px;
   margin-top: 4rem;
@@ -422,6 +448,12 @@ li {
   justify-content: flex-end;
   gap: 1.8rem;
   margin-bottom: 9.5rem;
+}
+
+.plan__ilent {
+  position: relative;
+  left: 70rem;
+  bottom: 325px;
 }
 
 .strana {
@@ -634,12 +666,16 @@ li {
 
 .subscribe {
   margin: 10rem;
-  width: 100%;
+  width: 70%;
+  height: 75%;
   border-radius: 16px;
   background: var(--primary-o, #FA7436);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  right: 0px;
+  left: 0px;
 }
 .subscribe__list {
   display: flex;
@@ -693,6 +729,18 @@ li {
 }
 .subscribe__lists-button {
   margin-top: 3.5px;
+}
+.subscribe__border-item-1 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 389.448px;
+}
+.subscribe__palma-item-1 {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  max-width: 112px;
 }
 
 .triabocks {
@@ -774,188 +822,4 @@ li {
 .uself:hover {
   background-color: #FA7436;
   transition: 0.4s;
-}
-
-@media (max-width: 767px) {
-  @import url("https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap");
-  .header {
-    max-width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  .header__list {
-    display: none;
-  }
-  .header__item a {
-    display: none;
-  }
-  .journey__block {
-    display: flex;
-    margin-left: 40px;
-    gap: 100px;
-  }
-  .journey__block2 {
-    display: none;
-  }
-  .journey__title {
-    max-width: 70px;
-    font-size: 1.5rem;
-  }
-  .journey__buttom {
-    display: none;
-  }
-  .location {
-    width: 350px;
-    display: flex;
-    justify-content: center;
-    margin-left: 15px;
-    margin-top: 40px;
-  }
-  .location__block {
-    gap: 2rem;
-    width: 100%;
-    display: flex;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
-    border-radius: 10px;
-    justify-content: center;
-    margin-left: 100px;
-  }
-  .location__button {
-    width: 45%;
-    height: 70px;
-  }
-  .thing__title {
-    font-size: 15px;
-    max-width: 40%;
-  }
-  .thing__page {
-    font-size: 13px;
-    max-width: 60%;
-    padding-top: 5px;
-  }
-  .thing__list-item {
-    max-width: 120px;
-  }
-  .thing__list-item h1 {
-    font-size: 12px;
-  }
-  .thing__list-item p {
-    font-size: 12px;
-    max-width: 100px;
-  }
-  .exclusive__lists-title {
-    font-size: 18px;
-  }
-  .exclusive__list {
-    display: flex;
-    flex-direction: column;
-  }
-  .plan__lists-title {
-    font-size: 18px;
-    line-height: 32px;
-  }
-  .plan__lists-page {
-    font-size: 9px;
-    line-height: 32px;
-  }
-  .strana__lists {
-    display: flex;
-    flex-direction: column;
-  }
-  .strana__items {
-    width: 350px;
-  }
-  .servic__list-title {
-    font-size: 9px;
-  }
-  .servic__list-page {
-    font-size: 9px;
-  }
-  .servic__list-pages {
-    font-size: 9px;
-    max-width: 50%;
-  }
-  .servic__list-titles {
-    font-size: 9px;
-  }
-  .servic__list-titlesis {
-    font-size: 9px;
-  }
-  .servic {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  .servic__list-two {
-    border-radius: 10px;
-    background: var(--white, #FFF);
-    box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(0, 0, 0, 0), 0px 8.1481485367px 6.5185184479px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.5185203552px 25.4814815521px 0px rgba(0, 0, 0, 0.01), 0px 64.8148117065px 46.851852417px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
-    width: 100%;
-    height: 300px;
-  }
-  .blog__title {
-    margin-left: 10rem;
-  }
-  .blog__titles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .blog__title h3 {
-    font-size: 10px;
-  }
-  .subscribe__list h1 {
-    font-size: 18px;
-  }
-  .subscribe__lists-box input {
-    font-size: 18px;
-    padding-right: 20px;
-  }
-  .subscribe__lists-box p {
-    font-size: 18px;
-  }
-  .subscribe__lists-button button {
-    font-size: 18px;
-  }
-  .triabocks {
-    width: 70%;
-    margin: 18rem;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .triabocks__list-page {
-    color: #666666;
-    padding-top: 1rem;
-  }
-  .triabocks__list-company {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    color: #000;
-  }
-  .triabocks__list-companies {
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    color: #666666;
-    padding-top: 1rem;
-  }
-  .footer {
-    display: flex;
-    gap: 15rem;
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    border-top: 1px solid #999;
-  }
-  .footer-item {
-    padding-top: 30px;
-  }
-  .footer-item a {
-    text-decoration: none;
-    color: #999;
-  }
 }/*# sourceMappingURL=style.css.map */
