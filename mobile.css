@@ -250,7 +250,7 @@
     display: none;
   }
   .location {
-    max-width: 500px;
+    max-width: 250px;
     display: flex;
     justify-content: center;
     margin-left: 15px;
@@ -258,7 +258,7 @@
   }
   .location__block {
     gap: 2rem;
-    max-width: 60%;
+    max-width: 50%;
     display: flex;
     background: #FFFFFF;
     box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
@@ -332,5 +332,101 @@
   }
   .plan__button {
     justify-content: center;
+  }
+  .strana__lists {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+  .strana__items {
+    width: 370px;
+  }
+  .strana__item-img {
+    width: 140px;
+  }
+  .servic {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .servic__list-two {
+    border-radius: 10px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 1.8518518209px 3.1481480598px 0px rgba(0, 0, 0, 0), 0px 8.1481485367px 6.5185184479px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.5185203552px 25.4814815521px 0px rgba(0, 0, 0, 0.01), 0px 64.8148117065px 46.851852417px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+    width: 70%;
+    height: 360px;
+  }
+  .blog {
+    margin: 10px;
+  }
+  .blog__title {
+    margin-left: 10rem;
+    margin-top: 40rem;
+  }
+  .blog__titles {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+    margin-bottom: 40rem;
+  }
+  .blog__title h3 {
+    font-size: 10px;
+  }
+  .subscribe__list h1 {
+    font-size: 18px;
+  }
+  .subscribe__lists-box input {
+    font-size: 18px;
+    padding-right: 20px;
+  }
+  .subscribe__lists-box p {
+    font-size: 18px;
+  }
+  .subscribe__lists-button button {
+    font-size: 18px;
+  }
+  .subscribe__border {
+    display: none;
+  }
+  .triabocks {
+    width: 70%;
+    margin: 5rem;
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .triabocks__list-page {
+    color: #666666;
+    padding-top: 1rem;
+  }
+  .triabocks__list-company {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    color: #000;
+  }
+  .triabocks__list-companies {
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    color: #666666;
+    padding-top: 1rem;
+  }
+  .footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    border-top: 1px solid #999;
+  }
+  .footer-item {
+    padding-top: 30px;
+  }
+  .footer-item a {
+    text-decoration: none;
+    color: #999;
   }
 }/*# sourceMappingURL=mobile.css.map */

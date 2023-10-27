@@ -538,7 +538,7 @@ li{
                 color: #666666;
             }
              width:100%;
-             display: none;
+             
          }
          .servic{
             &__list-title{
@@ -634,7 +634,7 @@ li{
            margin-top: 10rem;
            margin-bottom: 10rem;
            background-color: #cdf1ff;
-           display:none
+           
         }
         .servic__list-two{
             border-radius:5px;
@@ -694,7 +694,7 @@ li{
                 padding-top: 1rem;
             }
             max-width: 100%;
-            display: none;
+           
         }
         .subscribe{
             margin:10rem ;
@@ -790,7 +790,7 @@ li{
                     max-width: 112px;
                 }
             }
-            display: none;
+            
         }
         .triabocks{
             &__list:hover{
@@ -835,7 +835,7 @@ li{
             margin:18rem;
             gap:30px;
             display: flex;
-            display: none;
+            
         }
 .red {
     background-color:green;
@@ -857,7 +857,7 @@ li{
         text-decoration: none;
         color:#999;
     }
-    display: none;
+    
 }
 .footer:hover{
     transform: scale(1.1);
